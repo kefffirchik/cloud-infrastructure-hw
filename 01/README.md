@@ -50,7 +50,7 @@
 
 ### Terraform
 
-Конфигурация разделена на файлы:
+Terraform-конфигурации размещены в общей директории [terraform](../terraform/). Конфигурация разделена на файлы:
 
 - `providers.tf` - провайдер Yandex Cloud.
 - `variables.tf` - входные переменные.
@@ -64,6 +64,7 @@
 Для развёртывания используются команды:
 
 ```bash
+cd terraform
 terraform init
 terraform validate
 terraform plan
@@ -80,7 +81,7 @@ export YC_TOKEN="$(yc iam create-token)"
 
 ### Результаты развёртывания
 
-Все три виртуальные машины успешно созданы и находятся в состоянии `RUNNING`.
+На момент проверки все три виртуальные машины были успешно созданы и находились в состоянии `RUNNING`.
 
 ![Виртуальные машины](img/vm-instances.png)
 

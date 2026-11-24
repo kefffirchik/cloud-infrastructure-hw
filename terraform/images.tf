@@ -3,5 +3,5 @@ data "yandex_compute_image" "nat" {
 }
 
 data "yandex_compute_image" "ubuntu" {
-  family = "ubuntu-2004-lts"
+  image_id = "fd8vtnn9h4t6esrt91le"
 }
