@@ -11,6 +11,7 @@ resource "yandex_kms_symmetric_key_iam_binding" "storage" {
   role             = "kms.keys.encrypterDecrypter"
 
   members = [
-    "serviceAccount:aje3j1b1pajsmirvu3vq"
+    "serviceAccount:aje3j1b1pajsmirvu3vq",
+    "serviceAccount:${yandex_iam_service_account.k8s.id}"
   ]
 }

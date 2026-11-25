@@ -11,11 +11,17 @@ variable "folder_id" {
 variable "zone" {
   description = "Yandex Cloud availability zone"
   type        = string
-  default     = "ru-central1-b"
+  default     = "ru-central1-d"
 }
 
 variable "ssh_public_key_path" {
   description = "Path to SSH public key"
   type        = string
   default     = "~/.ssh/id_ed25519.pub"
+}
+
+variable "mysql_password" {
+  description = "Password for MySQL database user"
+  type        = string
+  sensitive   = true
 }
